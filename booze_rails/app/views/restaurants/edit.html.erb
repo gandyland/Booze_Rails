@@ -1,0 +1,16 @@
+<h2>Edit Restaurant</h2>
+
+<%= form_for @restaurant do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :neighborhood %>
+<%= f.text_field :neighborhood %>
+
+<%= f.label :beer %>
+<%= f.text_field :beer %>
+
+<%= f.submit %>
+<% end %>
+
+<%= link_to "Delete", @restaurant, method: :delete, class: "delete" %>
