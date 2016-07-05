@@ -1,5 +1,5 @@
-def get_artist_data
-  artist_data = {
+def get_restaurant_data
+  restaurant_data = {
     "rightproper" => {
       name: "Right Proper",
       neighborhood: "Shaw",
@@ -26,5 +26,5 @@ def get_artist_data
       beer: "Local Craft Beer"
     }
   }
-  return artist_data
+  return restaurant_data
 end
