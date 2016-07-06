@@ -1,15 +1,104 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require_tree .
+*= require_self
+*/
+
+body{
+  font-family: 'Oswald', sans-serif;
+  max-width: 100em;
+  margin:auto;
+  padding:3em 3em;
+  background-image: url(http://eskipaper.com/images/paisley-wallpaper-8.jpg);
+  color: black
+}
+
+nav a {
+  border: 1px solid red;
+  margin: .5em;
+  padding: .5em;
+  background-color: pink;
+}
+
+nav a:hover {
+  background-color: orange;
+  color: green;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: .25em;
+}
+
+h1 {
+  font-inherit;
+  color:inherit;
+  letter-spacing:-.005em;
+  text-decoration:none;
+  border-bottom:8px solid black;
+}
+
+h2 > a {
+  font-size: .75em;
+}
+
+input {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 20px;
+  border: solid 5px red;
+  width: 500px;
+  background:  teal;
+}
+
+input[type=submit],
+a.delete{
+  width: auto;
+  padding: 9px 15px;
+  background-color: ##2C323C;
+  border: 5;
+  font-size: 14px;
+  color: red;
+}
+
+input.delete, a.delete {
+  background-color: red;
+}
+
+
+.artist-photo {
+  width: 400px;
+}
+
+span.nationality {
+  font-size: .5em;
+}
+
+.alert{
+  color:#f00;
+}
+.notice{
+  color:#00f;
+}
