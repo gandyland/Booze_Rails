@@ -38,5 +38,4 @@ class BeersController < ApplicationController
       redirect_to beers_path
     end
 
-
 end
