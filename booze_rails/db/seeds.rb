@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+require_relative './beer_data.rb'
+require_relative './brewery_data.rb'
+require_relative './restaurant_data.rb'

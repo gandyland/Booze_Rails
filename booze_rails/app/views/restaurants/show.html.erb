@@ -2,11 +2,3 @@
 <h4><%= @restaurant.neighborhood %></h4>
 
 <h3>Beers <%= link_to "(+)", new_restaurant_beer_path(@restaurant) %></h3>
-
-<ul>
-  <% @restaurant.beers.each do |beer| %>
-  <li>
-    <%= link_to "#{beer.name} (#{beer.brewery})", restaurant_beer_path(@restaurant, beer) %>
-  </li>
-  <% end %>
-</ul>

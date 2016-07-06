@@ -1,7 +1,7 @@
-class BrewerysController < ApplicationController
+class BreweriesController < ApplicationController
 
   def index
-    @brewerys = Brewery.all
+    @breweries = Brewery.all
   end
 
   def new
@@ -13,7 +13,7 @@ class BrewerysController < ApplicationController
 
     redirect_to @brewery
   end
-  
+
   def show
     @brewery = Brewery.find(params[:id])
   end
@@ -33,7 +33,7 @@ class BrewerysController < ApplicationController
     @brewery = Brewery.find(params[:id])
     @brewery.destroy
 
-    redirect_to brewerys_path
+    redirect_to breweries_path
   end
 
   def brewery_params
