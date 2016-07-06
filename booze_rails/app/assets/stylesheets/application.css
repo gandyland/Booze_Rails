@@ -20,24 +20,28 @@ body{
   margin:auto;
   padding:3em 3em;
   background-image: url(http://eskipaper.com/images/paisley-wallpaper-8.jpg);
-  color: black
-}
+  color: red;
+  }
 
 nav a {
   border: 1px solid red;
   margin: .5em;
   padding: .5em;
-  background-color: pink;
+  background-color: black;
 }
 
 nav a:hover {
-  background-color: orange;
-  color: green;
+  background-color: red;
+  color: black;
+    border: 1px solid red
 }
 
 a, a:visited {
   text-decoration: none;
-  color: blue;
+  color: red;
+  margin: .5em;
+  padding: .5em;
+  background-color: black;
 }
 
 a:hover {
@@ -54,14 +58,22 @@ li {
 
 h1 {
   font-inherit;
-  color:inherit;
+  color: red;
+  margin: .5em;
+  padding: .5em;
+  background-color: black;
+  border: 3px solid red;
   letter-spacing:-.005em;
   text-decoration:none;
-  border-bottom:8px solid black;
+  border-bottom:3px solid red;
 }
 
 h2 > a {
   font-size: .75em;
+  color: red;
+  margin: .5em;
+  padding: .5em;
+  background-color: black;
 }
 
 input {
@@ -70,14 +82,16 @@ input {
   padding: 20px;
   border: solid 5px red;
   width: 500px;
-  background:  teal;
+  background:  black;
+  color: red;
+  font-size: 1em;
 }
 
 input[type=submit],
 a.delete{
   width: auto;
   padding: 9px 15px;
-  background-color: ##2C323C;
+  background-color: black;
   border: 5;
   font-size: 14px;
   color: red;
