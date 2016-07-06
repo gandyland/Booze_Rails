@@ -1,5 +1,5 @@
 class AddPhotoUrlToRestaurants < ActiveRecord::Migration
   def change
-    add_column :restaurants, :photo_url, :integer
+    add_column :restaurants, :photo_url, :string
   end
 end

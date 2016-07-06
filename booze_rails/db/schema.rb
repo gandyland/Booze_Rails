@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20160706150529) do
     t.string   "beer"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "photo_url"
+    t.string   "photo_url"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20160706150529) do
     t.string   "beer"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "photo_url"
+    t.string   "photo_url"
   end
 
 end
