@@ -9,7 +9,7 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.create!(restaurants_params)
+    @restaurant = Restaurant.create!(restaurant_params)
 
     redirect_to @restaurant
   end
@@ -34,6 +34,10 @@ class RestaurantsController < ApplicationController
     @restaurant.destroy
 
     redirect_to restaurants_path
+  end
+
+  def restaurant_params
+    params.require(:restaurant).permit(:name, :neighborhood, :beers)
   end
 
 end

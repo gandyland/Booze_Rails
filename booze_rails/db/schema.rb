@@ -18,11 +18,14 @@ ActiveRecord::Schema.define(version: 20160705192556) do
     t.string   "brewery"
     t.string   "style"
     t.integer  "abv"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "brewerys_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
-  create_table "breweries", force: :cascade do |t|
+  add_index "beers", ["brewerys_id"], name: "index_beers_on_brewerys_id"
+
+  create_table "brewerys", force: :cascade do |t|
     t.string   "name"
     t.string   "neighborhood"
     t.string   "beer"

@@ -13,7 +13,7 @@ class BrewerysController < ApplicationController
 
     redirect_to @brewery
   end
-
+  
   def show
     @brewery = Brewery.find(params[:id])
   end
@@ -34,6 +34,10 @@ class BrewerysController < ApplicationController
     @brewery.destroy
 
     redirect_to brewerys_path
+  end
+
+  def brewery_params
+    params.require(:brewery).permit(:name, :neighborhood, :beers)
   end
 
 end

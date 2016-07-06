@@ -1,6 +1,6 @@
 class CreateBreweries < ActiveRecord::Migration
   def change
-    create_table :breweries do |t|
+    create_table :brewerys do |t|
       t.string :name
       t.string :neighborhood
       t.string :beer
