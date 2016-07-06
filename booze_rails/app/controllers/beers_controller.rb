@@ -10,7 +10,8 @@ class BeersController < ApplicationController
   end
 
   def create
-    @beer = Beer.create
+    brewery = Brewery.find(params[:brewery_id])
+        @beer = @brewery.beers.create(beer_params)
     redirect_to @beer
   end
 
