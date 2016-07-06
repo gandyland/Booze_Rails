@@ -5,8 +5,7 @@ class BeersController < ApplicationController
   end
 
   def new
-    @brewery = Brewery.find(params[:brewery_id])
-    @beer = @brewery.beers.new
+    @beer = Beer.new
   end
 
   def create
