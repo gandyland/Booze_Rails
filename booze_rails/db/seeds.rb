@@ -9,3 +9,28 @@
 require_relative './beer_data.rb'
 require_relative './brewery_data.rb'
 require_relative './restaurant_data.rb'
+
+Beer.destroy_all
+Brewery.destroy_all
+Restaurant.destroy_all
+
+beer_data = get_beer_data()
+brewery_data = get_brewery_data()
+restaurant_data = get_restaurant_data()
+
+beer_data.each_pair do |brewery_name, beers|
+  info = brewery_data[brewery_name]
+  current_brewery = Brewery.create!({
+    name:         info[:name],
+    neighborhood:    info[:neighborhood],
+    beers:  info[:beers]
+    })
+
+    beers.each do |beer|
+      Beer.create!({
+        name:        beer[:name],
+        brewery:        beer[:brewery],
+        style:  beer[:style]
+        })
+      end
+    end

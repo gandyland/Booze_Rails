@@ -37,7 +37,7 @@ class BreweriesController < ApplicationController
   end
 
   def brewery_params
-    params.require(:brewery).permit(:name, :neighborhood, :beers)
+    params.require(:brewery).permit(:name, :neighborhood, :beers, :photo_url)
   end
 
 end

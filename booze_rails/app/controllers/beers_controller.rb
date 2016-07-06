@@ -10,9 +10,7 @@ class BeersController < ApplicationController
   end
 
   def create
-
-@beer = Beer.create!(beer_params)
-
+    @beer = Beer.create
     redirect_to @beer
   end
 
@@ -39,7 +37,7 @@ class BeersController < ApplicationController
   end
 
   def beer_params
-    params.require(:beer).permit(:name, :brewery, :style, :abv, :brewery_id)
+    params.require(:beer).permit(:name, :brewery, :style, :booze_id, :booze_type)
   end
 
 end

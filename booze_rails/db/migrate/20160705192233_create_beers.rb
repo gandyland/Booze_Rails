@@ -6,8 +6,6 @@ class CreateBeers < ActiveRecord::Migration
       t.string :style
       t.integer :abv
 
-      t.references :booze, polymorphic: true, index: true
-
       t.timestamps null: false
     end
   end
