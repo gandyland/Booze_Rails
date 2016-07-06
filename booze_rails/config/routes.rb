@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 root to: 'breweries#index'
-  resources :beers, except: [:new, :create]
+  resources :beers, only: [:index, :show, :new, :create]
   resources :breweries do
-    resources :beers, only: [:new, :create]
+    resources :beers, only: [:index, :show, :new, :create]
   end
   resources :restaurants do
-    resources :beers, only: [:new, :create]
+    resources :beers, only: [:index, :show, :new, :create]
   end
+  resources :beers
 
 end
 # The priority is based upon order of creation: first created -> highest priority.

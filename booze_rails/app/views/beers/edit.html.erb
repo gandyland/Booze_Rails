@@ -1,4 +1,4 @@
-<h2>Edit Beer</h2>
+<h2>Edit Beer <%= link_to "(+)", new_beer_path %></h2>
 
 <%= form_for @beer do |f| %>
 <%= f.label :name %>

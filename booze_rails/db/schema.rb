@@ -11,13 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160705192556) do
+ActiveRecord::Schema.define(version: 20160706143903) do
 
   create_table "beers", force: :cascade do |t|
     t.string   "name"
     t.string   "brewery"
     t.string   "style"
-    t.integer  "abv"
     t.integer  "breweries_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
@@ -31,6 +30,7 @@ ActiveRecord::Schema.define(version: 20160705192556) do
     t.string   "beer"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "photo_url"
   end
 
   create_table "restaurants", force: :cascade do |t|
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160705192556) do
     t.string   "beer"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "photo_url"
   end
 
 end
