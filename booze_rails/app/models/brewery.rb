@@ -1,4 +1,4 @@
 class Brewery < ActiveRecord::Base
-  has_many :beers dependent: :destroy
+  has_many :beers, :as => :booze
   validates :name, presence: true
 end

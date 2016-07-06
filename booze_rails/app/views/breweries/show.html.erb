@@ -2,4 +2,6 @@
 <h4><%= @brewery.neighborhood %></h4>
 <h4><%= @brewery.beer %></h4>
 
+<%= image_tag @brewery.photo_url, class: "brewery-photo" %>
+
 <h3>Beers <%= link_to "(+)", new_brewery_beer_path(@brewery) %></h3>

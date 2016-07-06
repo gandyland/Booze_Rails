@@ -2,4 +2,6 @@
 <h4><%= @restaurant.neighborhood %></h4>
 <h4><%= @restaurant.beer %></h4>
 
+<%= image_tag @restaurant.photo_url, class: "restaurant-photo" %>
+
 <h3>Beers <%= link_to "(+)", new_restaurant_beer_path(@restaurant) %></h3>
