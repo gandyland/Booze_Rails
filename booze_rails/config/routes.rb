@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+root to: 'brewery#index'
   resources :beers, except: [:new, :create]
   resources :brewerys do
     resources :beers, only: [:new, :create]
