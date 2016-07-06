@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1><%= link_to "Booze Rails", root_url %></h1>
 
-<%= yield %>
+  <nav>
+    <%= link_to "Beer", beers_path %>
+    <%= link_to "Breweries", brewerys_path %>
+    <%= link_to "Restaurants", restaurants_path %>
+  </nav>
+  <%= flash.each do|type, message| %>
+  <p class="<%= type %>"><%= message %></p>
+  <% end %>
+
+  <%= yield %>
 
 </body>
 </html>

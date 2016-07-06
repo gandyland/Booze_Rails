@@ -6,7 +6,7 @@
 <ul>
   <% @restaurant.beers.each do |beer| %>
   <li>
-    <%= link_to "#{beer.title} (#{beer.album})", restaurant_beer_path(@restaurant, beer) %>
+    <%= link_to "#{beer.name} (#{beer.brewery})", restaurant_beer_path(@restaurant, beer) %>
   </li>
   <% end %>
 </ul>
