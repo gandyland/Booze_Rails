@@ -11,19 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706150529) do
+ActiveRecord::Schema.define(version: 20160706143903) do
 
   create_table "beers", force: :cascade do |t|
     t.string   "name"
-    t.string   "brewery"
+    t.integer  "brewery_id"
     t.string   "style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "booze_id"
-    t.string   "booze_type"
   end
-
-  add_index "beers", ["booze_type", "booze_id"], name: "index_beers_on_booze_type_and_booze_id"
 
   create_table "breweries", force: :cascade do |t|
     t.string   "name"

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 root to: 'breweries#index'
-  resources :beers, only: [:index, :show, :new, :create]
+  resources :beers
   resources :breweries do
     resources :beers, only: [:index, :show, :new, :create]
   end

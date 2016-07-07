@@ -10,8 +10,9 @@ class BeersController < ApplicationController
   end
 
   def create
-    @brewery = Brewery.find(params[:brewery_id])
-    @beer = @brewery.beers.create(beer_params)
+    @brewery = Brewery.find_or_initialize_by(name:params[:beer][:brewery])
+    @brewery.save
+    @beer = @brewery.beers.create!(beer_params)
     redirect_to @beer
   end
 
@@ -38,7 +39,7 @@ class BeersController < ApplicationController
   end
 
   def beer_params
-    params.require(:beer).permit(:name, :brewery, :style, :booze_id, :booze_type)
+    params.require(:beer).permit(:name, :style, :booze_id, :booze_type)
   end
 
 end
