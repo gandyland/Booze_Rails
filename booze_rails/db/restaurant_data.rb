@@ -16,7 +16,7 @@ def get_restaurant_data
       name: "Shaw’s Tavern",
       neighborhood: "Shaw",
       beer: "Local Craft Beer and Macro Brews",
-      photo_url:
+      photo_url: "http://bitcheswhobrunch.com/wp-content/uploads/2012/09/8021857634_02b4c6c765_z.jpg"
     },
     "scionrestaurant" => {
       name: "Scion Restaurant",
@@ -28,7 +28,7 @@ def get_restaurant_data
       name: "Meridian Pint",
       neighborhood: "Columbia Heights",
       beer: "Local Craft Beer",
-      photo_url:
+      photo_url: "http://www.popville.com/wp-content/uploads/2015/06/IMG_7485.jpg"
     },
     "criosmodmex" => {
       name: "Crios Restaurant",
