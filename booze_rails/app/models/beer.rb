@@ -1,5 +1,7 @@
 class Beer < ActiveRecord::Base
-  belongs_to :brewery, :polymorphic => true
+  belongs_to :brewery
+  belongs_to :restaurant
   validates :brewery, presence: true
+  validates :restaurant, presence: true
   validates :name, presence: true
 end

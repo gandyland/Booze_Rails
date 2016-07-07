@@ -22,12 +22,15 @@ body{
   background-image: url(http://eskipaper.com/images/paisley-wallpaper-8.jpg);
   color: red;
   }
-
+title{
+  font-size: 3;
+}
 nav a {
   border: 1px solid red;
   margin: .5em;
   padding: .5em;
   background-color: black;
+  font-size: 1.25em;
 }
 
 nav a:hover {
@@ -54,11 +57,23 @@ ul {
 
 li {
   margin: .25em;
+  color: red;
+  margin: .5em;
+  padding: .5em;
+  background-color: black;
+  border: 2px solid red;
 }
-
+label {
+  margin: .25em;
+  color: red;
+  padding: .1em;
+  background-color: black;
+  border: 1px solid red;
+}
 h1 {
   font-inherit;
   color: red;
+  font-size: 3em;
   margin: .5em;
   padding: .5em;
   background-color: black;
@@ -68,7 +83,16 @@ h1 {
   border-bottom:3px solid red;
 }
 
-h2 > a {
+h2 {
+  font-size: 1.2em;
+  color: red;
+  margin: .5em;
+  padding: .5em;
+  background-color: black;
+  border: 2px solid red;
+}
+
+a {
   font-size: .75em;
   color: red;
   margin: .5em;
@@ -79,8 +103,8 @@ h2 > a {
 input {
   display: block;
   margin: 5px 0 20px 0;
-  padding: 20px;
-  border: solid 5px red;
+  padding: 10px;
+  border: solid 3px red;
   width: 500px;
   background:  black;
   color: red;
