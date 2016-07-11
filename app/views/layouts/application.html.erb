@@ -15,8 +15,10 @@
     <%= link_to "Breweries", breweries_path %>
     <%= link_to "Restaurants", restaurants_path %>
   </nav>
-  <%= flash.each do|type, message| %>
-  <p class="<%= type %>"><%= message %></p>
+
+  <!-- NHO: reminder of the difference between syntaxes for ERB tags  -->
+  <% flash.each do|type, message| %>
+    <p class="<%= type %>"><%= message %></p>
   <% end %>
 
   <%= yield %>

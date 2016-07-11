@@ -1,5 +1,6 @@
 <h2><%= @beer.name %> <%= link_to "(edit)", edit_beer_path(@beer) %></h2>
-<h4><%= @beer.brewery %></h4>
+<h4><%= @beer.brewery.name %></h4>
 <h4><%= @beer.style %></h4>
 
-Brewery: <%= @beer.brewery %></br>
+<!-- NHO: need to access a propert of the brewery object associated with @beer  -->
+Brewery: <%= @beer.brewery.name %></br>

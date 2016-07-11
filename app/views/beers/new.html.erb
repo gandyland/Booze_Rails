@@ -1,3 +1,4 @@
+<!-- NHO: think we can display the beer or restaurant name we are trying to associated this beer to -->
 <h2>New Beer for</h2>
 
 <%= form_for @beer do |f| %>
@@ -5,6 +6,9 @@
 <%= f.label :name %>
 <%= f.text_field :name %>
 
+<!-- NHO: if you want to associate the beer to a brewery,
+you need to do the association in the controller instead of a collecting a string
+or you could make this a multiple select field, populated with all Breweries -->
 <%= f.label :brewery %>
 <%= f.text_field :brewery %>
 

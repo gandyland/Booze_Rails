@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# NHO: one general piece of advice is to get in the habbit of organizing your gems
+# I generally sort my gem's into two categories: Rails out of the box, and any custom ones I add in
+# and then I alphabetize each category
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

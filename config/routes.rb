@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 root to: 'breweries#index'
-  resources :beers
+  # NHO: one thing to be cautious about here is having multiple routes map to the same controller action
+  resources :beers # NHO: one idea is to have only /beers route to the beers index
   resources :breweries do
     resources :beers, only: [:index, :show, :new, :create]
   end
