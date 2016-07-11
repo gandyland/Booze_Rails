@@ -5,13 +5,13 @@ class BeersController < ApplicationController
   end
 
   def new
-
     @beer = Beer.new
   end
 
   def create
+    # NHO: could be a great place for a code comment
     @brewery = Brewery.find_or_initialize_by(name:params[:beer][:brewery])
-    @brewery.save
+    @brewery.save # NHO: opportunity to check if this @brewery saved sucessfully
     @beer = @brewery.beers.create!(beer_params)
     redirect_to @beer
   end

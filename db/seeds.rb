@@ -14,6 +14,9 @@ Beer.destroy_all
 Brewery.destroy_all
 Restaurant.destroy_all
 
+# NHO: these seeds do not appear to work for me on local setup...
+# Maybe consider simplifing your seeds
+
 beer_data = get_beer_data()
 brewery_data = get_brewery_data()
 restaurant_data = get_restaurant_data()
